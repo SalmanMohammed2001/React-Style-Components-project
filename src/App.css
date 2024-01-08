@@ -1,0 +1,171 @@
+
+*{
+    /*overflow-x: hidden;*/
+}
+.header_container{
+    width: 100vw;
+
+    position: sticky;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+    background-color: rgb(255,238,238);
+    top:0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+
+}
+
+.header_container nav{
+    position: relative;
+    /*overflow: hidden;*/
+
+}
+.header_container nav ul{
+    overflow: hidden;
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    padding: 20px  ;
+    height: 100vh;
+    background-color: rgb(255,154,154);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    list-style: none;
+    transition:all 400ms ease-in;
+    /*overflow: hidden !important;*/
+
+
+
+}
+
+.header_container nav ul li{
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 400ms ease-in;
+}
+
+.header_container nav ul li:hover{
+    color: red;
+}
+
+
+.close_menu_img{
+    width: 20px;
+}
+
+.menu_img{
+    width: 20px;
+    padding-right: 20px;
+    /*margin-bottom: 50px;*/
+
+}
+.ul_side{
+    overflow-y: hidden;
+}
+
+
+.header_menu{
+    margin: 50px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+.header_container nav ol{
+    display: none;
+}
+
+.header_menuClose{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main_container{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1;
+    overflow-x: hidden;
+}
+.main_lef{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.main_lef input{
+    width: 100%;
+    padding: 7px;
+}
+
+.main_reight{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 14px;
+    border: 1px solid red;
+}
+.unit_container p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.unit_container img{
+    width: 100%;
+    object-fit: contain;
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .ul_side,.menu_img{
+        display: none;
+    }
+    .header_container nav ol{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+        margin-right: 15px;
+    }
+    .header_container nav ol li{
+        cursor: pointer;
+        font-weight: 700;
+        transition: all 400ms ease-in;
+
+    }
+    .header_container nav ol li:hover{
+        color: red;
+
+    }
+
+}
+
